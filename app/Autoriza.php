@@ -1,5 +1,5 @@
 <?php 
-    require_once 'app/Usuario.php';
+    require_once 'Usuario.php';
     class Autoriza{
         private $usuariosRegistrados = [];
 

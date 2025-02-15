@@ -19,7 +19,7 @@ if(isset($_SESSION['usuario'])){
         form{ display: inline-block; padding: 20px; border: 1px solid;}
     </style>
     <h1>Iniciar Sesion</h1>
-    <form action="procesaLogin.php" method="post">
+    <form action="app/procesaLogin.php" method="post">
         <input type="text" name="nombre" placeholder="Usuario" require>
         <br><br>
         <input type="password" name="password" placeholder="password" require>
