@@ -1,5 +1,6 @@
 <?php 
 $mensaje = "";
+$contra = "";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nombre = trim($_POST["nombre"]);
     $fecha_nacimiento = $_POST["FechaNac"];
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Validación 
 
-    if($nombre == ""){
+    if($nombre == " "){
      $mensaje = "Por favor ingresa tu nombre";
     }
     elseif ($edad < 18) {
@@ -48,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="date" name="FechaNac" require><br>
         <label for="FechaReg">Fecha Registro</label><br>
         <input type="date" name="Fecha_Reg" id="FechaRegistro" require ><br><br>
+        <br><input type="time" name="Tiempo" id="tiempo">
         <button type="submit">Registrarse</button>
     </form>
     
